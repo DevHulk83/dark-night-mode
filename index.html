@@ -1,1 +1,63 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Light-Mode</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img class="logo" src="/img/logo.png" alt="">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">REFERENCE</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">HIRE ME</a></li>
+
+            </ul>
+            <img id="icon" src="/img/moon.png">
+        </nav>
+
+        <div class="info">
+            <h1>I'm Dev <span>Hulk</span></h1>
+            <p>This is my offical portfolio website to showcase my all works related to web <br>development and UI design.</p>
+            <a href="">Dowload CV</a>
+        </div>
+        <div class="img-box">
+            <img class="back-img" src="/img/pattern.png" alt="">
+            <img class="main-img" src="/img/girl.png" alt="">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fab fa-facebook-f fa-lg"> </i></a>
+            <a href=""><i class="fab fa-linkedin-in fa-lg"> </i></a>
+            <a href=""><i class="fab fa-instagram fa-lg"> </i></a>
+            <a href=""><i class="fas fa-share-square fa-lg"> </i></a>
+
+
+        </div>
+    </div>
+    <script>
+        
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "/img/sun.png";
+            }else{
+                icon.src = "/img/moon.png"
+
+            }
+        }
+
+
+    </script>
+</body>
+</html>
